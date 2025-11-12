@@ -39,3 +39,22 @@ Aplikasi ini juga memungkinkan user untuk **membuat benchmark baru** berdasarkan
 
 ## 🗂️ Struktur Project
 
+
+---
+
+## ⚙️ Cara Menjalankan di Lokal
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/Raviana127/talent-success-pattern.git
+cd talent-success-pattern
+
+python -m venv venv
+venv\Scripts\activate      # Windows
+# atau
+source venv/bin/activate   # Mac/Linux
+
+pip install streamlit plotly pandas supabase
+
+streamlit run app2.py
+
