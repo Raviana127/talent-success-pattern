@@ -54,7 +54,7 @@ venv\Scripts\activate      # Windows
 # atau
 source venv/bin/activate   # Mac/Linux
 
+pip install -r requirements.txt
 pip install streamlit plotly pandas supabase
-
 streamlit run app2.py
 
