@@ -1,5 +1,5 @@
 -- ===========================================
--- 1️⃣ TABLE BOBOT
+-- TABLE BOBOT
 -- ===========================================
 CREATE TABLE IF NOT EXISTS weight_config (
     tgv_name TEXT PRIMARY KEY,
@@ -14,7 +14,7 @@ INSERT INTO weight_config (tgv_name, weight) VALUES
 ON CONFLICT (tgv_name) DO NOTHING;
 
 -- ===========================================
--- 2️⃣ QUERY UTAMA
+-- QUERY UTAMA
 -- ===========================================
 WITH benchmark AS (
     SELECT employee_id 
@@ -98,7 +98,7 @@ tgv AS (
 )
 
 -- ===========================================
--- 3️⃣ OUTPUT FINAL
+-- OUTPUT FINAL
 -- ===========================================
 SELECT 
     t.employee_id,
